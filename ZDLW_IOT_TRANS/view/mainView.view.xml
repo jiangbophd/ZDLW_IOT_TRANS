@@ -1,0 +1,42 @@
+<core:View controllerName="dlw.iot.transport.app.view.mainView" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns:viz="sap.viz.ui5.controls" xmlns="sap.m">
+	<Page showHeader="false">
+		<content >
+			<l:HorizontalLayout class="header">
+				<Image src="img/logo.png" width="70%"/>
+				<l:VerticalLayout>
+					<Text class="headerTitle" text="{i18n>truckDriverCockpit}"/>
+					<l:HorizontalLayout>
+						<l:VerticalLayout>
+							<Image densityAware="false" src="img/icon-temperature.png" width="{/imageWidth}"/>
+							<Text class="smallText" text="des"/>
+						</l:VerticalLayout>
+						<Text class="nameTitle" text="123"/>
+						<l:VerticalLayout>
+							<Image densityAware="false" src="img/icon-percent.png" width="{/imageWidth}"/>
+							<Text class="smallText" text="des"/>
+						</l:VerticalLayout>
+						<Text class="smallText" text="456"/>
+						<l:VerticalLayout>
+							<Image densityAware="false" src="img/icon-time.png" width="{/imageWidth}"/>
+							<Text class="smallText" text="des"/>
+						</l:VerticalLayout>
+						<Text class="smallText" text="789"/>
+					</l:HorizontalLayout>
+				</l:VerticalLayout>
+			</l:HorizontalLayout>
+			<IconTabBar class="sapUiResponsiveContentPadding" id="idIconTabBar" select="handleIconTabBarSelect">
+				<items>
+					<IconTabFilter count="{/ProductCollectionStats/Counts/Weight/Ok}" icon="sap-icon://temperature" iconColor="Positive" id="tabFilterId"
+						key="temperature" text="{i18n>temperature}"></IconTabFilter>
+					<IconTabFilter count="{/ProductCollectionStats/Counts/Weight/Heavy}" icon="sap-icon://waiver" iconColor="Positive" key="humidity"
+						text="{i18n>humidity}"/>
+					<IconTabFilter count="{/ProductCollectionStats/Counts/Weight/Overweight}" icon="sap-icon://sales-order-item" iconColor="Positive"
+						key="orders" text="{i18n>orders}"/>
+					<IconTabFilter count="{/ProductCollectionStats/Counts/Weight/Overweight}" icon="sap-icon://map-2" iconColor="Positive" key="map"
+						text="{i18n>map}"/>
+				</items>
+			</IconTabBar>
+		</content>
+	</Page>
+</core:View>

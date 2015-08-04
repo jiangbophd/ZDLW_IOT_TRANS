@@ -1,0 +1,27 @@
+.sapUiUfdShellBackground, .sapUshellShellBackground, .sapMGlobalBackgroundColor {
+    background-color: white;
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    background-image: none;
+}
+
+.sapUiHLayout {
+     display: block; 
+}
+
+.chart{
+    background: white;
+}
+
+.header{
+    width:550px;
+    margin:auto; 
+    margin-top:30px;
+    border:1px solid green;
+}
+
+.headerTitle{
+    font-weight: bold;
+}
